@@ -1,5 +1,5 @@
 {% set name = "mkdocs-jupyter" %}
-{% set version = "0.15.1" %}
+{% set version = "0.16.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocs-jupyter-{{ version }}.tar.gz
-  sha256: 12ec960590381c0ea5174b0e723da763d35b2a660c01920f377c30f65a31e9aa
+  sha256: 542492e9869f5942af21a7a0ede47099086c4ad18c229ec996b8d2ca47166401
 
 build:
   number: 0
@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://github.com/danielfrg/mkdocs-jupyter
-  summary: 'Use Jupyter Notebooks in mkdocs'
+  summary: Use Jupyter Notebooks in mkdocs
   license: Apache-2.0
   license_file: LICENSE.txt
 
