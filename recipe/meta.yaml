@@ -1,5 +1,5 @@
 {% set name = "mkdocs-jupyter" %}
-{% set version = "0.16.0" %}
+{% set version = "0.16.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocs-jupyter-{{ version }}.tar.gz
-  sha256: 542492e9869f5942af21a7a0ede47099086c4ad18c229ec996b8d2ca47166401
+  sha256: de5c1667cc07c93bf11a70fba6b1a9f67b9a9729390c918891f55bcc889e3c45
 
 build:
   number: 0
@@ -25,6 +25,8 @@ requirements:
     - nbconvert >=6.0.7,<7
     - python >=3.7
     - jupytext >=1.11.0
+    - traitlets
+    - pygments
 
 test:
   imports:
