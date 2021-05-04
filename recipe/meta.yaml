@@ -1,5 +1,5 @@
 {% set name = "mkdocs-jupyter" %}
-{% set version = "0.17.1" %}
+{% set version = "0.17.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocs-jupyter-{{ version }}.tar.gz
-  sha256: db673ab5fc867c62e5e2e60284aa49389360842f80187af2823445085cb8c553
+  sha256: b8f602143780ba87cef1367dc78f0f672b686acba558a41292232a94839618fb
 
 build:
   number: 0
