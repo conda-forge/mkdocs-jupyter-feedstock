@@ -11,7 +11,7 @@ source:
   sha256: 04c4d3fbaf0ce93e2bd5246a649b46c3d1a93137e252f7d5048db9db62d0f822
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -27,6 +27,7 @@ requirements:
     - jupytext >=1.11.0
     - traitlets
     - pygments
+    - mdit-py-plugins
 
 test:
   imports:
