@@ -27,6 +27,7 @@ requirements:
     - jupytext >=1.11.0
     - traitlets
     - pygments
+    - mdit-py-plugins
 
 test:
   imports:
