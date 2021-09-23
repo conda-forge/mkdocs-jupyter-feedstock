@@ -1,5 +1,5 @@
 {% set name = "mkdocs-jupyter" %}
-{% set version = "0.17.3" %}
+{% set version = "0.17.4" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocs-jupyter-{{ version }}.tar.gz
-  sha256: 04c4d3fbaf0ce93e2bd5246a649b46c3d1a93137e252f7d5048db9db62d0f822
+  sha256: e9a858f79f2cdd71a2558c3b51787663361ec258e1f709c19aa19e8be9582fa7
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,14 +20,13 @@ requirements:
     - pip
     - python >=3.7
     - setuptools_scm
+    - poetry
   run:
     - mkdocs >=1.1.0
     - nbconvert >=6.0.7,<7
     - python >=3.7
     - jupytext >=1.11.0
-    - traitlets
-    - pygments
-    - mdit-py-plugins
+    - mkdocs-material >=7.2.8
 
 test:
   imports:
