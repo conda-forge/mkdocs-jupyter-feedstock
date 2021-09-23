@@ -20,6 +20,7 @@ requirements:
     - pip
     - python >=3.7
     - setuptools_scm
+    - poetry
   run:
     - mkdocs >=1.1.0
     - nbconvert >=6.0.7,<7
