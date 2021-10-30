@@ -20,13 +20,13 @@ requirements:
     - pip
     - python >=3.7
     - setuptools_scm
-    - poetry
+    - poetry ==0.18.1
   run:
     - mkdocs >=1.1.0
-    - nbconvert >=6.0.7,<7
+    - nbconvert >=6.2,<7
     - python >=3.7
     - jupytext >=1.11.0
-    - mkdocs-material >=7.2.8
+    - mkdocs-material >=7.3
 
 test:
   imports:
