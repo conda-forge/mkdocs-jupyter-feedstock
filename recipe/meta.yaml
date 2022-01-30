@@ -1,6 +1,5 @@
 {% set name = "mkdocs-jupyter" %}
-{% set version = "0.18.0" %}
-
+{% set version = "0.19.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocs-jupyter-{{ version }}.tar.gz
-  sha256: 2ed9ecf65af1c21cf9d666c4e7ea113dab2016ce715b4c0a086f0d31c8cb2e3a
+  sha256: 40bb752658156706adabe6140551e5efe4164256861cc72f082bdaf50139575b
 
 build:
   number: 0
@@ -19,7 +18,6 @@ requirements:
   host:
     - pip
     - python >=3.7
-    - setuptools_scm
     - poetry
   run:
     - mkdocs >=1.1.0
