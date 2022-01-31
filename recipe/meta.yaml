@@ -1,6 +1,5 @@
 {% set name = "mkdocs-jupyter" %}
-{% set version = "0.18.0" %}
-
+{% set version = "0.20.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocs-jupyter-{{ version }}.tar.gz
-  sha256: 2ed9ecf65af1c21cf9d666c4e7ea113dab2016ce715b4c0a086f0d31c8cb2e3a
+  sha256: 4d436d45dedc5e78760e24a54105ceef849aa6414e4ef13ddc99c915e9a8ea73
 
 build:
   number: 0
@@ -19,14 +18,14 @@ requirements:
   host:
     - pip
     - python >=3.7
-    - setuptools_scm
-    - poetry
+    - poetry-core >=1
+    - setuptools >=57,<58
   run:
-    - mkdocs >=1.1.0
-    - nbconvert >=6.0.7,<7
+    - mkdocs >=1.2.3
+    - nbconvert >=6.2,<7
     - python >=3.7
-    - jupytext >=1.11.0
-    - mkdocs-material >=7.2.8
+    - jupytext >=1.11.02
+    - mkdocs-material >=8.0.0
 
 test:
   imports:
@@ -46,3 +45,4 @@ about:
 extra:
   recipe-maintainers:
     - hadim
+    - cpcloud
