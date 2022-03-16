@@ -5,7 +5,7 @@ Home: https://github.com/danielfrg/mkdocs-jupyter
 
 Package license: Apache-2.0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mkdocs-jupyter-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mkdocs-jupyter-feedstock/blob/main/LICENSE.txt)
 
 Summary: Use Jupyter Notebooks in mkdocs
 
@@ -15,8 +15,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11045&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/mkdocs-jupyter-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11045&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/mkdocs-jupyter-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -116,5 +116,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@cpcloud](https://github.com/cpcloud/)
 * [@hadim](https://github.com/hadim/)
 
