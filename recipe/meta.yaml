@@ -32,11 +32,11 @@ test:
   imports:
     - mkdocs_jupyter
     - mkdocs_jupyter.tests
-  commands:
-    - pip check
-  requires:
-    - pip
-    - requests  # because of `mkdocs-material` missing it for `pip check`
+# NOTE(hadim): `pip check` failing for wrong reasons
+#  commands:
+#    - pip check
+#  requires:
+#    - pip
 
 about:
   home: https://github.com/danielfrg/mkdocs-jupyter
