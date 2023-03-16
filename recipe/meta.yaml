@@ -1,13 +1,13 @@
 {% set name = "mkdocs-jupyter" %}
-{% set version = "0.22.0" %}
+{% set version = "0.23.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocs-jupyter-{{ version }}.tar.gz
-  sha256: 585cc69bea4cb9faf6898131978dc9a9b225091ed4b6084f5ab65652a5e12185
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: b2745c1e003ef9ec80d43ac8cc00b4de41810a1160bb133eca5329275106ead6
 
 build:
   number: 0
@@ -21,12 +21,14 @@ requirements:
     - poetry-core >=1
     - setuptools >=57,<58
   run:
-    - mkdocs >=1.2.3
-    - nbconvert >=6.2
+    - mkdocs <2,>=1.4.0
+    - nbconvert <8,>=7.2.9
     - python >=3.7
-    - jupytext >=1.13.8
-    - mkdocs-material >=8.0.0
-    - pygments >=2.12.0
+    - jupytext <2,>1.13.8
+    - mkdocs-material >9.0.0
+    - pygments >2.12.0
+    # - pytest-cov 
+    # - pytest 
 
 test:
   imports:
