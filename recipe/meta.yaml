@@ -1,5 +1,5 @@
 {% set name = "mkdocs-jupyter" %}
-{% set version = "0.24.5" %}
+{% set version = "0.24.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: fa7804879a627702497e2afaea40a3db1cbdd2a3aba0e4417782dd24ca899bb3
+  sha256: 89fcbe8a9523864d5416de1a60711640b6bc2972279d2adf46ed2776c2d9ff7c
 
 build:
   number: 0
@@ -37,6 +37,7 @@ requirements:
     # - pymdown-extensions 
     # - ipykernel <7.0.0,>6.0.0
     # - coverage 
+    # - ipykernel <7.0.0,>6.0.0
     # - ipykernel <7.0.0,>6.0.0
     # - ipykernel <7.0.0,>6.0.0
 
