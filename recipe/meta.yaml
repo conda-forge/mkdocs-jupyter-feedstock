@@ -1,13 +1,13 @@
 {% set name = "mkdocs-jupyter" %}
-{% set version = "0.24.6" %}
+{% set version = "0.24.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 89fcbe8a9523864d5416de1a60711640b6bc2972279d2adf46ed2776c2d9ff7c
+  url: https://github.com/danielfrg/mkdocs-jupyter/archive/refs/tags/{{ version }}}}.tar.gz
+  sha256: d6a65d505422b372ddf2ed1faf047e00778f018d3d9d2330bf72d05cf1c3e062
 
 build:
   number: 0
@@ -17,39 +17,25 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - hatch >=1
-    - setuptools >=57,<58
   run:
-    - mkdocs <2,>=1.4.0
-    - nbconvert <8,>=7.2.9
-    - python >=3.7
-    - jupytext <2,>1.13.8
+    - python >=3.8
+    - nbconvert >=7.2.9,<8
+    - mkdocs >=1.4.0,<2
     - mkdocs-material >9.0.0
+    - jupytext >1.13.8,<2
     - pygments >2.12.0
-    # - pytest-cov 
-    # - pytest 
-    # - pymdown-extensions 
-    # - ipykernel <7.0.0,>6.0.0
-    # - coverage 
-    # - pytest-cov 
-    # - pytest 
-    # - pymdown-extensions 
-    # - ipykernel <7.0.0,>6.0.0
-    # - coverage 
-    # - ipykernel <7.0.0,>6.0.0
-    # - ipykernel <7.0.0,>6.0.0
-    # - ipykernel <7.0.0,>6.0.0
+    - ipykernel <7.0.0,>6.0.0
 
 test:
   imports:
     - mkdocs_jupyter
     - mkdocs_jupyter.tests
-# NOTE(hadim): `pip check` failing for wrong reasons
-#  commands:
-#    - pip check
-#  requires:
-#    - pip
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/danielfrg/mkdocs-jupyter
