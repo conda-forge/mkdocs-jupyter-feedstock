@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/danielfrg/mkdocs-jupyter/archive/refs/tags/{{ version }}}}.tar.gz
+  url: https://github.com/danielfrg/mkdocs-jupyter/archive/refs/tags/{{ version }}.tar.gz
   sha256: d6a65d505422b372ddf2ed1faf047e00778f018d3d9d2330bf72d05cf1c3e062
 
 build:
@@ -47,3 +47,4 @@ extra:
   recipe-maintainers:
     - hadim
     - cpcloud
+    - cwognum
