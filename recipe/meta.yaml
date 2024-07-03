@@ -1,5 +1,5 @@
 {% set name = "mkdocs-jupyter" %}
-{% set version = "0.24.7" %}
+{% set version = "0.24.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/danielfrg/mkdocs-jupyter/archive/refs/tags/{{ version }}.tar.gz
-  sha256: d6a65d505422b372ddf2ed1faf047e00778f018d3d9d2330bf72d05cf1c3e062
+  sha256: 2660112bffdeaccd6c32435a501d38dc36c5d51b64717bd716410636950c3e95
 
 build:
   number: 0
