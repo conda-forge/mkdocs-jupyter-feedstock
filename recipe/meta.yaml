@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/danielfrg/mkdocs-jupyter/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 2660112bffdeaccd6c32435a501d38dc36c5d51b64717bd716410636950c3e95
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 09a762f484d540d9c0e944d34b28cb536a32869e224b460e2fc791b143f76940
 
 build:
   number: 0
