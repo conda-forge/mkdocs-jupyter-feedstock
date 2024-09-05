@@ -1,5 +1,5 @@
 {% set name = "mkdocs-jupyter" %}
-{% set version = "0.24.8" %}
+{% set version = "0.25.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 09a762f484d540d9c0e944d34b28cb536a32869e224b460e2fc791b143f76940
+  sha256: e26c1d341916bc57f96ea3f93d8d0a88fc77c87d4cee222f66d2007798d924f5
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,10 +21,10 @@ requirements:
     - hatch >=1
   run:
     - python >=3.8
-    - nbconvert >=7.2.9,<8
-    - mkdocs >=1.4.0,<2
+    - nbconvert <8,>=7.2.9
+    - mkdocs <2,>=1.4.0
     - mkdocs-material >9.0.0
-    - jupytext >1.13.8,<2
+    - jupytext <2,>1.13.8
     - pygments >2.12.0
     - ipykernel <7.0.0,>6.0.0
 
