@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
     - hatch >=1
   run:
-    - python >=3.8
+    - python >=3.9
     - nbconvert <8,>=7.2.9
     - mkdocs <2,>=1.4.0
     - mkdocs-material >9.0.0
