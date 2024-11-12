@@ -17,6 +17,7 @@ build:
 requirements:
   host:
     - pip
+    - setuptools
     - python >=3.9
     - hatch >=1
   run:
