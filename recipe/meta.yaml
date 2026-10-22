@@ -1,13 +1,14 @@
 {% set name = "mkdocs-jupyter" %}
-{% set version = "0.26.3" %}
+{% set version = "0.27.0" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: e1e8bd48a1b96542e84e3028e3066112bac7b94d95ab69f8b91305c84003ca26
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 2530405b9616534b8a8bb81da688c4e617b1f704cdfe4c1bd8462b071b9a4d03
 
 build:
   number: 0
@@ -27,7 +28,8 @@ requirements:
     - mkdocs-material >9.0.0
     - jupytext <2,>1.13.8
     - pygments >2.12.0
-    - ipykernel >6.0.0,<8
+    - ipykernel <8,>6.0.0
+    - beautifulsoup4 <5,>=4.7
 
 test:
   imports:
